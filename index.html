@@ -5,107 +5,682 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>
-    <link rel="icon" type="image/x-icon" href="./images/udemy-logo.svg">
-    <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
-
-    <!-- HEADER -->
-
-        <header>
-                <ul class="left-nav">
-                    <li><a href="#"><img src="./images/udemy-wordmark-logo.svg" alt=""></a></li>
-                    <li><a href="#">Categories</a></li>
-                </ul>
-                <div class="search">
-                    <i class="material-symbols-outlined">search</i>
-                    <input type="search" placeholder="Search for anything">
-                </div>
-                <ul class="right-nav">
-                    <li><a href="#">Udemy Business</a></li>
-                    <li><a href="#">Teach on Udemy</a></li>
-                    <li><a href="#"><i class="material-symbols-outlined">shopping_cart</i></a></li>
-                    <li><a href="#">Log in</a></li>
-                    <li><a href="#">Sign up</a></li>
-                    <li><a href="#"><i class="material-symbols-outlined">language</i></a></li>
-                </ul>
-        </header>
     
-    <!-- MAIN -->
+        <!-- HEADER -->
 
-        <main>
-            <section class="carousel">
-                <div class="billboard">
-                    
-                    <a class="billboard-image" href="#">
-                        <img src="./images/billboard-image-one.jpeg" alt="">
+    <header> 
+        <nav class="leftside-navbar">
+            <ul class="leftside-navbar-list">
+                <li class="leftside-navbar-item">
+                    <a href="#" class="header-logo-wrapper">
+                        <img src="./images/udemy-wordmark-logo.svg" alt="" class="header-logo">
                     </a>
-                    <div class="billboard-content-box">
-                       <div class="billboard-content">
-                            <h1 class="billboard-title">
-                                Unlock the power of your people
-                            </h1>
-                            <p class="billboard-subtitle">
-                            Udemy Business is trusted by 12.5k+ companies around the world. 
-                            <a href="#">
-                                Find out what we can do for yours.
-                            </a>
+                </li>
+                <li class="leftside-navbar-item">
+                    <a href="#" class="leftside-navbar-link">Categories</a>
+                </li>
+            </ul>
+        </nav>
+        <form action="#" class="search-form-container">
+            <div class="search-form-icon-wrapper">
+                <i class="material-symbols-outlined">search</i>
+            </div>
+            <div class="search-form-field-wrapper">
+                <input type="search" placeholder="Search for anything" class="search-form-field">
+            </div>
+        </form>
+        <nav class="rightside-navbar">
+            <ul class="rightside-navbar-list">
+                <li class="rightside-navbar-item">
+                    <a href="#" class="rightside-navbar-link">Udemy Business</a>
+                </li>
+                <li class="rightside-navbar-item">
+                    <a href="#" class="rightside-navbar-link">Teach on Udemy</a>
+                </li>
+                <li class="rightside-navbar-item">
+                    <a href="#" class="shopping-cart-link"><i class="material-symbols-outlined">shopping_cart</i></a>
+                </li>
+                <li class="rightside-navbar-item">
+                    <a href="#" class="log-in-link">Log in</a>
+                </li>
+                <li class="rightside-navbar-item">
+                    <a href="#" class="sign-up-link">Sign up</a>
+                </li>
+                <li class="rightside-navbar-item">
+                    <a href="#" class="header-language-selector"><i class="material-symbols-outlined">language</i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+        <!-- MAIN -->
+
+    <main>
+
+        <!-- BILLBOARD SECTION -->
+
+        <section class="billboard-section">
+            <div class="billboard-section-box-model">
+                <div class="billboard-carousel-banner-container">
+                    <div class="billboard-banner-wrapper">
+                        <img src="./images/billboard-first-banner.jpg" alt="" class="billboard-banner">
+                        <div class="billboard-tagline-wrapper">
+                            <h3 class="billboard-tagline-title">Unlock the power of your people</h3>
+                            <p class="billboard-tagline-description">
+                                Udemy Business is trusted by 12.5K+ companies around the world.
+                                <a href="#" class="billboard-tagline-cta">Find out what we can do for yours.</a>
                             </p>
+                        </div>
+                        <div class="billboard-carousel-banner-btn left">
+                            <button class="billboard-carousel-banner-scroll-btn">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </button>
+                        </div>  
+                        <div class="billboard-carousel-banner-btn right">
+                            <button class="billboard-carousel-banner-scroll-btn">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
                         </div> 
                     </div>
-                </div>   
-                <!-- <div class="billboard">
-                    <a class="billboard-image" href="#">
-                        <img src="./images/billboard-image-two.jpeg" alt="">
-                    </a>
-                    <div class="billboard-content">
-                        <h1 class="billboard-title">
-                            Learning that gets you
-                        </h1>
-                        <p class="billboard-subtitle">
-                            Skills for your present (and your future). Get started with us.
-                        </p>
-                    </div> -->
-                </div>
-                <!-- <button>
-                    <i class="material-symbols-outlined">arrow_back_ios</i>
-                </button>
-                <button>
-                    <i class="material-symbols-outlined">arrow_forward_ios</i>
-                </button> -->
-            </section>
-            <section class="section-two">
-
-            </section>
-            <div>
-
+                    
+                </div> 
             </div>
-            <section class="section-three">
+                
+        </section>
+    
+            <!-- COURSES SECTION -->
 
-            </section>
-            <section class="section-four">
+        <section class="courses-section">
+            <div class="courses-section-box-model">
+                <div class="courses-section-container">
+                    <h3 class="courses-section-title">A broad selection of courses</h3>
+                    <p class="courses-section-subtitle">
+                        Choose from 213,000 online video courses with new additions published every month
+                    </p>
+                    <div class="courses-category-wrapper">
+                        <ul class="courses-category-lists">
+                            <li class="courses-category-item">
+                                <a href="#" class="courses-category">Python</a>
+                            </li>
+                            <li class="courses-category-item">
+                                <a href="#" class="courses-category">Excel</a>
+                            </li>
+                            <li class="courses-category-item">
+                                <a href="#" class="courses-category">Web Development</a>
+                            </li>
+                            <li class="courses-category-item">
+                                <a href="#" class="courses-category">JavaScript</a>
+                            </li>
+                            <li class="courses-category-item">
+                                <a href="#" class="courses-category">Data Science</a>
+                            </li>
+                            <li class="courses-category-item">
+                                <a href="#" class="courses-category">AWS certification</a>
+                            </li>
+                            <li class="courses-category-item">
+                                <a href="#" class="courses-category">Drawing</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="courses-carousel-section-container">
+                        <div class="courses-carousel-tagline-wrapper">
+                            <h3 class="courses-carousel-tagline">
+                                Expand your career opportunities with Python
+                            </h3>
+                            <p class="courses-carousel-tagline-description">
+                                Take one of Udemy's range of Python courses and learn how to code using this incredibly useful language. Its 
+                                simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You’ll 
+                                learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to...
+                            </p>
+                            <div class="courses-carousel-tagline-cta-btn-wrapper">
+                                <a href="#" class="courses-carousel-tagline-cta-btn-link">Explore Python</a>
+                            </div>
+                        </div>
+                        <div class="courses-carousel-wrapper">
+                            <div class="course-card">
+                                <div class="course-image-wrapper">
+                                    <img src="./images/the complete python programming course.jpg" alt=""
+                                    class="course-image">
+                                </div>
+                                <div class="course-details-wrapper">
+                                    <p class="course-title">
+                                        Learn Python: The Complete Python Programming Course
+                                    </p>
+                                    <p class="course-author">Avinash Jain, The Codex</p>
+                                    <p class="course-ratings"><span class="left">4.3</span>
+                                        <span class="middle">
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star-half checked"></i>
+                                        </span>
+                                        <span class="right">&#40;4,509&#41;</span>
+                                    </p>
+                                    <p class="course-price">&#8358;14,900</p>
+                                </div>
+                            </div>
+                            <div class="course-card">
+                                <div class="course-image-wrapper">
+                                    <img src="./images/python for data anaysis and visualization ver 1.jpg" alt=""
+                                    class="course-image">
+                                </div>
+                                <div class="course-details-wrapper">
+                                    <p class="course-title">
+                                        Learn Python for Data Analysis and Visualization Ver 1
+                                    </p>
+                                    <p class="course-author">Jose Portilla</p>
+                                    <p class="course-ratings"><span class="left">4.2</span>
+                                        <span class="middle">
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star-half checked"></i>
+                                        </span>
+                                        <span class="right">&#40;18,710&#41;</span>
+                                    </p>
+                                    <p class="course-price">&#8358;29,900</p>
+                                    <div class="course-best-seller-ad-wrapper">
+                                        <p class="course-best-seller-ad">Bestseller</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-card">
+                                <div class="course-image-wrapper">
+                                    <img src="./images/learn python from the scratch.jpg" alt=""
+                                    class="course-image">
+                                </div>
+                                <div class="course-details-wrapper">
+                                    <p class="course-title">
+                                        Python for Beginners - Learn Programming from scratch
+                                    </p>
+                                    <p class="course-author">Edwin Diaz, Coding Faculty Solutions</p>
+                                    <p class="course-ratings"><span class="left">4.3</span>
+                                        <span class="middle">
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star-half checked"></i>
+                                        </span>
+                                        <span class="right">&#40;2,447&#41;</span>
+                                    </p>
+                                    <p class="course-price">&#8358;14,900</p>
+                                </div>
+                            </div>
+                            <div class="course-card">
+                                <div class="course-image-wrapper">
+                                    <img src="./images/python for beginners.jpg" alt=""
+                                    class="course-image">
+                                </div>
+                                <div class="course-details-wrapper">
+                                    <p class="course-title">
+                                        Learn Python: Python for Beginners
+                                    </p>
+                                    <p class="course-author">Abrar Hussain</p>
+                                    <p class="course-ratings"><span class="left">4.3</span>
+                                        <span class="middle">
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star-half checked"></i>
+                                        </span>
+                                        <span class="right">&#40;2,849&#41;</span>
+                                    </p>
+                                    <p class="course-price">&#8358;6,500</p>
+                                </div>
+                            </div>
+                            <div class="course-card">
+                                <div class="course-image-wrapper">
+                                    <img src="./images/object-oriented programming.jpg" alt=""
+                                    class="course-image">
+                                </div>
+                                <div class="course-details-wrapper">
+                                    <p class="course-title">
+                                        Python Beyond the Basics - Object-Oriented Programming
+                                    </p>
+                                    <p class="course-author">Infinite Skills</p>
+                                    <p class="course-ratings"><span class="left">4.6</span>
+                                        <span class="middle">
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star-half checked"></i>
+                                        </span>
+                                        <span class="right">&#40;2,991&#41;</span>
+                                    </p>
+                                    <p class="course-price">&#8358;10,500</p>
+                                </div>
+                            </div>
+                            <div class="courses-carousel-btn">
+                                <button class="courses-scroll-btn">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            </section>
-            <section class="section-five">
+                <!-- OTHER SIMILAR COURSES SECTION -->
 
-            </section>
-            <section class="section-six">
+                <div class="other-similar-courses-section-container">
+                    <h3 class="other-similar-courses-section-title">Students are viewing</h3>
+                    <div class="other-similar-courses-carousel-wrapper">
+                        <div class="other-similar-course-card">
+                            <div class="other-similar-course-image-wrapper">
+                                <img src="./images/the complete 2023 web development bootcamp.jpg" alt=""
+                                class="other-similar-course-image">
+                            </div>
+                            <div class="other-similar-course-details-wrapper">
+                                <p class="other-similar-course-title">The Complete 2023 Web Development Bootcamp</p>
+                                <p class="other-similar-course-author">Dr. Angela Yu</p>
+                                <p class="other-similar-course-ratings"><span class="left">4.7</span>
+                                    <span class="middle">
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star-half checked"></i>
+                                    </span>
+                                    <span class="right">&#40;256,641&#41;</span>
+                                </p>
+                                <p class="other-similar-course-price">&#8358;34,900</p>
+                                <div class="other-similar-course-best-seller-ad-wrapper">
+                                    <p class="other-similar-course-best-seller-ad">Bestseller</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="other-similar-course-card">
+                            <div class="other-similar-course-image-wrapper">
+                                <img src="./images/100 days of code-the complete python pro bootcamp for 2023.jpg" alt=""
+                                class="other-similar-course-image">
+                            </div>
+                            <div class="other-similar-course-details-wrapper">
+                                <p class="other-similar-course-title">
+                                    100 Days of Code: The Complete Python Pro Bootcamp for 2023
+                                </p>
+                                <p class="other-similar-course-author">Dr. Angela Yu</p>
+                                <p class="other-similar-course-ratings"><span class="left">4.7</span>
+                                    <span class="middle">
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star-half checked"></i>
+                                    </span>
+                                    <span class="right">&#40;171,114&#41;</span>
+                                </p>
+                                <p class="other-similar-course-price">&#8358;29,900</p>
+                                <div class="other-similar-course-best-seller-ad-wrapper">
+                                    <p class="other-similar-course-best-seller-ad">Bestseller</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="other-similar-course-card">
+                            <div class="other-similar-course-image-wrapper">
+                                <img src="./images/the complete javascript course 2023 from zero to expert!.jpg" alt=""
+                                class="other-similar-course-image">
+                            </div>
+                            <div class="other-similar-course-details-wrapper">
+                                <p class="other-similar-course-title">
+                                    The Complete JavaScript Course 2023: From Zero to Expert!
+                                </p>
+                                <p class="other-similar-course-author">Jonas Schmedtmann</p>
+                                <p class="other-similar-course-ratings"><span class="left">4.7</span>
+                                    <span class="middle">
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star-half checked"></i>
+                                    </span>
+                                    <span class="right">&#40;165,058&#41;</span>
+                                </p>
+                                <p class="other-similar-course-price">&#8358;34,900</p>
+                                <div class="other-similar-course-best-seller-ad-wrapper">
+                                    <p class="other-similar-course-best-seller-ad">Bestseller</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="other-similar-course-card">
+                            <div class="other-similar-course-image-wrapper">
+                                <img src="./images/ultimate AWS certified solutions architect associate.jpg" alt=""
+                                class="other-similar-course-image">
+                            </div>
+                            <div class="other-similar-course-details-wrapper">
+                                <p class="other-similar-course-title">
+                                    Ultimate AWS Certified Solutions Architect Associate...
+                                </p>
+                                <p class="other-similar-course-author">Stephane Maarek | AWS Certified Cloud...</p>
+                                <p class="other-similar-course-ratings"><span class="left">4.7</span>
+                                    <span class="middle">
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star-half checked"></i>
+                                    </span>
+                                    <span class="right">&#40;164,592&#41;</span>
+                                </p>
+                                <p class="other-similar-course-price">&#8358;24,900</p>
+                                <div class="other-similar-course-best-seller-ad-wrapper">
+                                    <p class="other-similar-course-best-seller-ad">Bestseller</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="other-similar-course-card">
+                            <div class="other-similar-course-image-wrapper">
+                                <img src="./images/react - the complete guide (incl hooks, react router, redux).jpg" alt=""
+                                class="other-similar-course-image">
+                            </div>
+                            <div class="other-similar-course-details-wrapper">
+                                <p class="other-similar-course-title">
+                                    React - The Complete Guide (incl Hooks, React Router, Redux)
+                                </p>
+                                <p class="other-similar-course-author">Academind by Maximilian Schwarzmuller,...</p>
+                                <p class="other-similar-course-ratings"><span class="left">4.6</span>
+                                    <span class="middle">
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star-half checked"></i>
+                                    </span>
+                                    <span class="right">&#40;174,182&#41;</span>
+                                </p>
+                                <p class="other-similar-course-price">&#8358;29,900</p>
+                                <div class="other-similar-course-best-seller-ad-wrapper">
+                                    <p class="other-similar-course-best-seller-ad">Bestseller</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="other-similar-courses-carousel-btn">
+                            <button class="other-similar-courses-scroll-btn">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            </section>
-            <section class="section-seven">
+            <!-- TREDING TOPICS SECTION -->
+        
+        <section class="trending-topics-section">
+            <div class="trending-topics-section-box-model">
+                <div class="trending-topics-section-container">
+                    <h3 class="trending-topics-section-title">Featured topics by category</h3>
+                    <div class="trending-topics-category-wrapper">
+                        <ul class="trending-topics-category-lists">
+                            <li class="trending-topics-category-heading">Development</li>
+                            <li class="trending-topics-category-item">
+                                <a href="#" class="trending-topics-category-topic">Python</a>
+                                <p class="trending-topics-category-enrollee-counts">36,354,994 students</p>
+                            </li>
+                            <li class="trending-topics-category-item">
+                                <a href="#" class="trending-topics-category-topic">Web Development</a>
+                                <p class="trending-topics-category-enrollee-counts">11,415,615 students</p>
+                            </li>
+                            <li class="trending-topics-category-item">
+                                <a href="#" class="trending-topics-category-topic">Machine Learning</a>
+                                <p class="trending-topics-category-enrollee-counts">7,070,015 students</p>
+                            </li>
+                        </ul>
+                        <ul class="trending-topics-category-lists">
+                            <li class="trending-topics-category-heading">Business</li>
+                            <li class="trending-topics-category-item">
+                                <a href="#" class="trending-topics-category-topic">Financial Analysis</a>
+                                <p class="trending-topics-category-enrollee-counts">1,195,282 students</p>
+                            </li>
+                            <li class="trending-topics-category-item">
+                                <a href="#" class="trending-topics-category-topic">SQL</a>
+                                <p class="trending-topics-category-enrollee-counts">5,977,561 students</p>
+                            </li>
+                            <li class="trending-topics-category-item">
+                                <a href="#" class="trending-topics-category-topic">PMP</a>
+                                <p class="trending-topics-category-enrollee-counts">1,733,398 students</p>
+                            </li>
+                        </ul>
+                        <ul class="trending-topics-category-lists">
+                            <li class="trending-topics-category-heading">IT and Software</li>
+                            <li class="trending-topics-category-item">
+                                <a href="#" class="trending-topics-category-topic">AWS certification</a>
+                                <p class="trending-topics-category-enrollee-counts">6,078,244 students</p>
+                            </li>
+                            <li class="trending-topics-category-item">
+                                <a href="#" class="trending-topics-category-topic">Ethical Hacking</a>
+                                <p class="trending-topics-category-enrollee-counts">10,931,066 students</p>
+                            </li>
+                            <li class="trending-topics-category-item">
+                                <a href="#" class="trending-topics-category-topic">Cyber Security</a>
+                                <p class="trending-topics-category-enrollee-counts">3,998,037 students</p>
+                            </li>
+                        </ul>
+                        <ul class="trending-topics-category-lists">
+                            <li class="trending-topics-category-heading">Design</li>
+                            <li class="trending-topics-category-item">
+                                <a href="#" class="trending-topics-category-topic">Photoshop</a>
+                                <p class="trending-topics-category-enrollee-counts">10,909,736 students</p>
+                            </li>
+                            <li class="trending-topics-category-item">
+                                <a href="#" class="trending-topics-category-topic">Graphic Design</a>
+                                <p class="trending-topics-category-enrollee-counts">3,381,052 students</p>
+                            </li>
+                            <li class="trending-topics-category-item">
+                                <a href="#" class="trending-topics-category-topic">Drawing</a>
+                                <p class="trending-topics-category-enrollee-counts">2,410,849 students</p>
+                            </li>
+                        </ul>    
+                    </div>
+                    <div class="trending-topics-cta-btn-wrapper">
+                        <a href="#" class="trending-topics-cta-btn-link">Explore more topics</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            </section>
-            <section class="section-eight">
+            <!-- PATNERS SECTION -->
 
-            </section>
-        </main>
+        <section class="partners-banner-section">
+            <div class="partners-banner-container">
+                <div class="partners-banner-wrapper">
+                    <h3 class="partners-banner-heading">Trusted by over 13,400 great teams</h3>
+                    <p>Leading companies use the same courses to help employees keep their skills fresh.</p>
+                    <ul class="partners-logo-list">
+                        <li class="partners-logo-item">
+                            <img src="./images/nasdaq-logo.svg" alt="Nasdaq Logo">
+                        </li>
+                        <li class="partners-logo-item">
+                            <img src="./images/volkswagen-logo.svg" alt="Volkswagen Logo">
+                        </li>
+                        <li class="partners-logo-item">
+                            <img src="./images/box-logo.svg" alt="Box Logo">
+                        </li>
+                        <li class="partners-logo-item">
+                            <img src="./images/netapp-logo.svg" alt="Netapp Logo">
+                        </li>
+                        <li class="partners-logo-item">
+                            <img src="./images/eventbrite-logo.svg" alt="Eventbrite Logo">
+                        </li>
+                        <li class="partners-logo-item">
+                            <img src="./images/tcs-logo.svg" alt="TCS Logo">
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-     <!-- FOOTER -->
+        </section>
 
-        <footer>
+            <!-- TESTIMONIAL SECTION -->
 
-        </footer>
+        <section class="testimonial-carousel-section">
+            <div class="testimonial-carousel-container">
+                <div class="testimonial-content-card">
+                    <div class="testimonial-content-wrapper">
+                        <div class="testimonial-quotation-mark">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <div class="testimonial-content"> 
+                            Thanks to Udemy Business, Booz Allen has armed our 
+                            workforce, specifically its <span>data scientists, with highly 
+                            relevant and in-demand tech skills</span> that are enabling 
+                            consultants to stay ahead of big data trends and raise 
+                            the bar on proficiency, skills, and competencies to 
+                            meet client demand.
+                        </div>
+                        <div class="testimonial-cta">
+                            <a href="#" class="testimonial-cta-link">Read full story</a>
+                        </div>
+                    </div>
+                    <div class="testimonial-user-profile">
+                        <div class="testimonial-user-avatar-container">
+                            <img src="./images/james hemgen avatar.jpeg" alt="James Hemgen Avatar" 
+                            class="testimonial-user-avatar">
+                        </div>
+                        <div class="testimonial-user-details">
+                            <div class="testimonial-user-name-wrapper">
+                                <span class="testimonial-user-name">James Hemgen</span>
+                            </div>
+                            <div class="testimonial-user-title-wrapper">
+                                <span class="testimonial-user-title">Principal</span>
+                            </div>
+                            <div></div>
+                            <div class="testimonial-user-company-wrapper">
+                                <span class="testimonial-user-company">Booz Allen Hamilton</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-carousel-btn">
+                            <button class="scroll-btn">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-cta-more-stories">
+                    <a href="#">View more customer stories</a>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
 
+        </section>
+
+            <!-- NON-STUDENT SECTION -->
+
+        <section class="non-student-cta-section">
+            <!-- UDEMY BUSINESS -->
+            <div class="non-student-ub-cta-container">
+                <div class="non-student-ub-cta-content-wrapper">
+                    <div class="non-student-ub-cta-logo-container">
+                        <img src="./images/udemy-business-wordmark-logo.svg" alt="Udemy Business Wordmark Logo" 
+                        class="non-student-ub-cta-logo">
+                    </div>
+                    <h3 class="non-student-ub-cta-header">Upskill your team with Udemy Business</h3>
+                    <ul class="non-student-ub-cta-content-list">
+                        <li class="non-student-ub-cta-content-list-item">
+                            <i class="material-symbols-outlined">fiber_manual_record</i>
+                            <span>Unlimited access to 19,000+ top Udemy courses, anytime, anywhere</span>
+                        </li>
+                        <li class="non-student-ub-cta-content-list-item">
+                            <i class="material-symbols-outlined">fiber_manual_record</i>
+                            <span>International course collection in 14 languages</span>
+                        </li>
+                        <li class="non-student-ub-cta-content-list-item">
+                            <i class="material-symbols-outlined">fiber_manual_record</i>
+                            <span>Top certifications in tech and business</span>
+                        </li>
+                    </ul>
+                    <div class="non-student-ub-cta-btn-wrapper">
+                        <div class="non-student-ub-cta-primary-btn">
+                            <a href="#" class="non-student-ub-cta-primary-btn-link">Get Udemy Business</a>
+                        </div>
+                        <div class="non-student-ub-cta-secondary-btn">
+                            <a href="#" class="non-student-ub-cta-secondary-btn-link" >Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="non-student-ub-cta-image-container">
+                    <img src="./images/udemy-business-promo.jpg" alt="Udemy Business Promo Image" 
+                    class="non-student-ub-cta-image">
+                </div>
+            </div>
+                <!-- UDEMY INSTRUCTOR -->
+            <div class="non-student-ui-cta-container">
+                <div class="non-student-ui-cta-image-container">
+                    <img src="./images/udemy-instructor.jpg" alt="Udemy Instructor Image" 
+                    class="non-student-ui-cta-image">
+                </div>
+                <div class="non-student-ui-cta-content-wrapper">
+                    <h3 class="non-student-ui-cta-header">Become an instructor</h3>
+                    <div class="non-student-ui-cta-content">
+                        Instructors from around the world teach 
+                        millions of students on Udemy. We provide the 
+                        tools and skills to teach what you love.
+                    </div>
+                    <div class="non-student-ui-cta-btn-wrapper">
+                        <div class="non-student-ui-cta-btn">
+                            <a href="#" class="non-student-ui-cta-primary-btn-link">Start teaching today</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- FOOTER -->
+
+    <footer>
+        <div class="footer-section-box-model">
+            <div class="footer-section">
+                <div class="links-and-language-selector">
+                    <ul class="links-selector-column">
+                        <li><a href="#">Udemy Business</a></li>
+                        <li><a href="#">Teach on Udemy</a></li>
+                        <li><a href="#">Get the app</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                    <ul class="links-selector-column">
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help and Support</a></li>
+                        <li><a href="#">Affiliate</a></li>
+                        <li><a href="#">Investors</a></li>
+                    </ul>
+                    <ul class="links-selector-column">
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Cookies settings</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Accessibility statement</a></li>
+                    </ul>
+                    <div class="language-selector-container">
+                        <button type="button" class="language-selector">
+                            <i class="material-symbols-outlined">language</i>
+                            <span>English</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="logo-and-copyright">
+                    <div class="logo-container">
+                        <a href="#">
+                            <img src="./images/udemy-wordmark-logo-footer.svg" alt="Udemy Wordmark Footer Logo">
+                        </a>
+                    </div>
+                    <div class="copyright-container">
+                        &copy; 2023 Udemy, Inc.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
